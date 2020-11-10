@@ -39,7 +39,6 @@ try:
 except NameError:
     xrange = range  # Python 3
 
-
 def parse_args():
   """
   Parse input arguments
@@ -325,4 +324,5 @@ if __name__ == '__main__':
   imdb.evaluate_detections(all_boxes, output_dir)
 
   end = time.time()
+
   print("test time: %0.4fs" % (end - start))
